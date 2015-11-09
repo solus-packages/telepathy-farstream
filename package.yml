@@ -1,0 +1,20 @@
+name       : telepathy-farstream
+version    : 0.6.2
+release    : 1
+source     :
+    - http://telepathy.freedesktop.org/releases/telepathy-farstream/telepathy-farstream-0.6.2.tar.gz : 6fa099f22d13a2a49240445a13e918928aef097675d76e5cc9f98ab496087e0a
+license    : GPL-2.0 # CHECK ME
+summary    : PLEASE FILL ME IN
+description: |
+    PLEASE FILL ME IN
+builddeps  :
+    - pkgconfig(gobject-2.0)
+    - pkgconfig(dbus-1)
+    - pkgconfig(telepathy-glib)
+    - pkgconfig(farstream-0.2)
+setup      : |
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

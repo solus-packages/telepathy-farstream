@@ -1,12 +1,14 @@
 name       : telepathy-farstream
 version    : 0.6.2
-release    : 2
+release    : 3
 source     :
     - http://telepathy.freedesktop.org/releases/telepathy-farstream/telepathy-farstream-0.6.2.tar.gz : 6fa099f22d13a2a49240445a13e918928aef097675d76e5cc9f98ab496087e0a
 license    : GPL-2.1
-summary    : An effort to create a framework to deal with all known audio/video conferencing protocols
+component  : desktop.library
+summary    : An effort to create a framework to deal with all known audio/video conferencing
+    protocols
 description: |
-    The Farstream (formerly Farsight) project is an effort to create a framework to deal with all known audio/video conferencing protocols. On one side it offers a generic API that makes it possible to write plugins for different streaming protocols, on the other side it offers an API for clients to use those plugins. 
+    The Farstream (formerly Farsight) project is an effort to create a framework to deal with all known audio/video conferencing protocols. On one side it offers a generic API that makes it possible to write plugins for different streaming protocols, on the other side it offers an API for clients to use those plugins.
 builddeps  :
     - pkgconfig(gobject-2.0)
     - pkgconfig(dbus-1)
